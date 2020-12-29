@@ -211,6 +211,7 @@ svg {
 
 table {
   border-collapse: collapse;
+  border-bottom: #007bff;
 }
 
 caption {
@@ -2580,13 +2581,13 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #232628;
+  background-color: #397fad;
   border-color: #1d1f22;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(88, 92, 96, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(24, 76, 128, 0.5);
 }
 
 .btn-secondary {
@@ -3221,7 +3222,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.9375rem;
-  color: #aaa;
+  color: rgb(83, 36, 36);
   text-align: left;
   list-style: none;
   background-color: #3a3f44;
