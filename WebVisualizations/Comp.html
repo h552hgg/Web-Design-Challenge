@@ -8,44 +8,127 @@
   <link rel="stylesheet" href="bootstrap.css">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Pymoli</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href=homepage.html>Home Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=Visual.html>Visualization</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href=Comp.html>Comparisons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=Data.html>Data
-                
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            </li>
-          </ul>      
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+     <a class="navbar-brand" href="#">SQLAlchemy</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarColor01">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item">
+           <a class="nav-link" href=homepage.html>Home Page</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href=Visual.html>Visualization</a>
+         </li>
+         <li class="nav-item active">
+           <a class="nav-link" href=Comp.html>Comparisons</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href=Data.html>Data</a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Graphs
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">Action</a>
+             <a class="dropdown-item" href="#">Another action</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="#">Something else here</a>
+           </div>
+         </li>
+       </ul>      
+     </div>
+ </nav>
+<br>
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Comparison Page</h1>
+      </div>
+    </div>
+
+    <br>
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Percipitation</h3>
+        <div class="shake">
+          <a href="Percp.html">
+            <img src="Visualizations/Percipitation.png" alt="Precipitation Graph" width="550px" height="360px">
+          </a>
         </div>
-</nav>
+      </div>
+      
+      <div class="col-md-6">
+        <h3>Temperature Observations (TOBS)</h3>
+        <div class="shake">
+          <a href="TOBS.html">
+            <img src="Visualizations/tobshist.png" alt="tobs graph" class="responsive" >
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+      <div class="col-md-5">
+        <p>The graph above shows the amount of precipitation observed between the Month of September 2016 and August 2017.</p>
+      </div>
+     
+      <div class="col-md-1">
+        <p></p>
+      </div>
+      
+      <div class="col-md-5">
+        <p>The graph above displays a histogram of all the temperature observed and the frequency.</p>
+      </div>
+    
+    </div>
+    <br>
+    <!-- Row 4 -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>TOBS linegraph</h3>
+        <div class="shake">
+          <a href="TOBS.html">
+            <img src="Visualizations/tobsline.png" alt="tobs linegraph" class="responsive"> 
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Standard Error</h3>
+        <div class="shake">
+          <a href="Standarderror.html">
+            <img src="Visualizations/error.png" alt="Standard Error" class="responsive">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="row">
+      <div class="col-md-6">
+        <p>The graph above displays a linegraph of the temperature observed.</p>
+      </div>
+      <div class="col-md-6">
+        <p>The graph above displays the standard error of the findings average.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
